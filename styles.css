@@ -1,80 +1,87 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    text-align: center;
-    padding: 1em 0;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
 }
 
-nav ul {
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.contact, .summary, .experience, .education, .certificates, .skills, .awards {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact ul, .experience ul, .certificates ul, .skills ul, .awards ul {
     list-style: none;
     padding: 0;
-    background-color: #444;
-    text-align: center;
-    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0;
+.contact ul li, .experience ul li, .certificates ul li, .skills ul li, .awards ul li {
+    padding: 5px 0;
 }
 
-nav ul li a {
-    color: #fff;
-    padding: 1em;
-    display: inline-block;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-section {
-    padding: 2em;
-    margin: 1em auto;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.word-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.word-cloud a {
-    margin: 10px;
-    text-decoration: none;
+.contact ul li a, .experience ul li a, .certificates ul li a {
     color: #333;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s;
+    text-decoration: none;
 }
 
-.word-cloud a img {
-    max-width: 80px;
-    max-height: 80px;
+.contact ul li a:hover, .certificates ul li a:hover {
+    color: #77aaff;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+h3, h4 {
+    color: #333;
     margin-bottom: 5px;
 }
 
-.word-cloud a:hover {
-    transform: scale(1.1);
+h3 span, h4 span {
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #777;
 }
 
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
+    background: #333;
     color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
 }
